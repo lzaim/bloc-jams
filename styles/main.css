@@ -56,13 +56,19 @@ body {
 .links-container .navbar-link:hover {
     color: rgb(233,50,117);
 }
-}
 
 .container {
      margin: 0 auto;
      max-width: 64rem;
  }
-
+ 
+ .clearfix::after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
 
 /* Medium and small screens (640px) */
  @media (min-width: 640px) {
